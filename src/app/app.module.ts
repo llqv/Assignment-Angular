@@ -9,6 +9,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CartpageComponent } from './pages/cartpage/cartpage.component';
 import { RouterLink } from '@angular/router';
+import { DetailProductComponent } from './pages/detail-product/detail-product.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { RouterLink } from '@angular/router';
     BannerComponent,
     FooterComponent,
     CartpageComponent,
+    DetailProductComponent
   ],
   imports: [
     BrowserModule,
