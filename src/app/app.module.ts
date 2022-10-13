@@ -22,6 +22,7 @@ import { RouterLink } from '@angular/router';
     BannerComponent,
     FooterComponent,
     CartpageComponent,
+    DetailProductComponent,
     SigninComponent,
     SignupComponent,
     NotFoundComponent,
