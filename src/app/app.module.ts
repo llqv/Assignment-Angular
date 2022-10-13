@@ -1,3 +1,7 @@
+import { DetailProductComponent } from './pages/detail-product/detail-product.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { SigninComponent } from './pages/signin/signin.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'
@@ -18,6 +22,10 @@ import { RouterLink } from '@angular/router';
     BannerComponent,
     FooterComponent,
     CartpageComponent,
+    SigninComponent,
+    SignupComponent,
+    NotFoundComponent,
+    DetailProductComponent
   ],
   imports: [
     BrowserModule,
