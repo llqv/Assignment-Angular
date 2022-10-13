@@ -25,7 +25,6 @@ import { RouterLink } from '@angular/router';
     SigninComponent,
     SignupComponent,
     NotFoundComponent,
-    DetailProductComponent
   ],
   imports: [
     BrowserModule,
