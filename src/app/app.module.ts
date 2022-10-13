@@ -13,6 +13,9 @@ import { BannerComponent } from './components/banner/banner.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CartpageComponent } from './pages/cartpage/cartpage.component';
 import { RouterLink } from '@angular/router';
+import { AdminDashboardComponent } from './pages/admin-dashboard/admin-dashboard.component';
+import { AdminheaderComponent } from './components/adminheader/adminheader.component';
+import { AdminproduclistComponent } from './pages/adminproduclist/adminproduclist.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,9 @@ import { RouterLink } from '@angular/router';
     SigninComponent,
     SignupComponent,
     NotFoundComponent,
+    AdminDashboardComponent,
+    AdminheaderComponent,
+    AdminproduclistComponent,
   ],
   imports: [
     BrowserModule,
