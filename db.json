@@ -1,0 +1,38 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "name": "Áo T-shikt"
+    },
+    {
+      "id": 2,
+      "name": "Áo Hoode"
+    },
+    {
+      "id": 3,
+      "name": "Áo khoác"
+    },
+    {
+      "id": 4,
+      "name": "Áo du lịch"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Pro 1",
+      "price": 20000,
+      "desc": "angneungoengoieiongjenjgenjigenjigenji",
+      "categoryId": "1",
+      "img": "C:\\fakepath\\f1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Pro 2",
+      "price": 200000,
+      "desc": "ansjnajngoengoneogneognejk rkj rkbkjr",
+      "categoryId": "3",
+      "img": "C:\\fakepath\\f1.jpg"
+    }
+  ]
+}

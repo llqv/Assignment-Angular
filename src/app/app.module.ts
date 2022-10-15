@@ -12,10 +12,14 @@ import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CartpageComponent } from './pages/cartpage/cartpage.component';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterModule } from '@angular/router';
 import { AdminDashboardComponent } from './pages/admin-dashboard/admin-dashboard.component';
 import { AdminheaderComponent } from './components/adminheader/adminheader.component';
-import { AdminproduclistComponent } from './pages/adminproduclist/adminproduclist.component';
+import { AddProComponent } from './components/add-pro/add-pro.component';
+import { EditProComponent } from './components/edit-pro/edit-pro.component';
+import { AdminSiderBarComponent } from './components/admin-sider-bar/admin-sider-bar.component';
+import { ListProComponent } from './components/list-pro/list-pro.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,13 +35,19 @@ import { AdminproduclistComponent } from './pages/adminproduclist/adminproduclis
     NotFoundComponent,
     AdminDashboardComponent,
     AdminheaderComponent,
-    AdminproduclistComponent,
+    AddProComponent,
+    EditProComponent,
+    AdminSiderBarComponent,
+    ListProComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterLink,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
