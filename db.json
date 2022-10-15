@@ -33,6 +33,30 @@
       "desc": "ansjnajngoengoneogneognejk rkj rkbkjr",
       "categoryId": "3",
       "img": "C:\\fakepath\\f1.jpg"
+    },
+    {
+      "name": "",
+      "price": 0,
+      "desc": "",
+      "categoryId": "",
+      "img": "",
+      "id": 3
+    },
+    {
+      "name": "",
+      "price": 0,
+      "desc": "",
+      "categoryId": "",
+      "img": "",
+      "id": 4
+    },
+    {
+      "name": "Mai Kha Ninh",
+      "price": 122221,
+      "desc": "adasdasdasdas",
+      "categoryId": "1",
+      "img": "",
+      "id": 5
     }
   ]
 }
