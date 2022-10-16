@@ -14,4 +14,7 @@ export class CategoryService {
   getAllCate(): Observable<ICate[]> {
     return this.HttpClient.get<ICate[]>(`${this.API}`);
   }
+  getCate(id: any): Observable<ICate[]> {
+    return this.HttpClient.get<ICate[]>(`${this.API}/${id}`);
+  }
 }

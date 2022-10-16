@@ -88,6 +88,15 @@
       "size": "6",
       "img": "https://res.cloudinary.com/dqsykuvvc/image/upload/v1665938485/asm_angular/f5_yufjgr.jpg",
       "id": 5
+    },
+    {
+      "name": "Gà không lối thoát",
+      "price": 20000,
+      "desc": "Ddaaay la chức năng ko phải bug",
+      "categoryId": "2",
+      "size": "3",
+      "img": "",
+      "id": 6
     }
   ],
   "SignupUsers": [
