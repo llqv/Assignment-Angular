@@ -23,6 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductComponent } from './components/product/product.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { NgxDropzoneModule } from 'ngx-dropzone';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,9 @@ import { ProductsComponent } from './pages/products/products.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    NgxDropzoneModule,
     RouterModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
