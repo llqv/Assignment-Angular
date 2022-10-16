@@ -57,6 +57,66 @@
       "categoryId": "1",
       "img": "",
       "id": 5
+    },
+    {
+      "name": "Pro 3 update",
+      "price": 123000,
+      "desc": "321",
+      "categoryId": "2",
+      "img": "",
+      "id": 6
+    },
+    {
+      "name": "Pro 3",
+      "price": 123000,
+      "desc": "ewqewq",
+      "categoryId": "2",
+      "img": "",
+      "id": 7
+    }
+  ],
+  "SignupUsers": [
+    {
+      "fullname": "admin",
+      "email": "admin@gmail.com",
+      "password": "",
+      "id": 1
+    },
+    {
+      "fullname": "admin1",
+      "email": "admin@gmail.com",
+      "password": "",
+      "id": 2
+    },
+    {
+      "fullname": "admin",
+      "email": "admin@gmail.com",
+      "password": "",
+      "id": 3
+    },
+    {
+      "fullname": "admin",
+      "email": "admin@gmail.com",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "fullname": "admin12",
+      "email": "admin@gmail.com",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "fullname": "admin13",
+      "email": "admin13@gmail.com",
+      "password": "123456",
+      "id": 6
+    },
+    {
+      "fullname": "admin14",
+      "email": "admin14@gmail.com",
+      "password": "123456",
+      "id": 7
     }
   ]
 }

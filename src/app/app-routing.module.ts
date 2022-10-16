@@ -10,17 +10,19 @@ import { RouterModule, Routes } from '@angular/router';
 import { CartpageComponent } from './pages/cartpage/cartpage.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { AdminDashboardComponent } from './pages/admin-dashboard/admin-dashboard.component';
+import { ProductComponent } from './components/product/product.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent, pathMatch: "full" },
+  { path: 'product', component: ProductComponent },
   { path: 'cart', component: CartpageComponent },
   { path: 'detailpro', component: DetailProductComponent },
   { path: 'signin', component: SigninComponent },
   { path: 'signup', component: SignupComponent },
-  { 
+  {
     path: 'admin', component: AdminDashboardComponent, children: [
-      { path: "", component: ListProComponent }, 
-      { path: "product/add", component: AddProComponent }, 
+      { path: "", component: ListProComponent },
+      { path: "product/add", component: AddProComponent },
       { path: "product/:id/edit", component: EditProComponent },
     ]
   },

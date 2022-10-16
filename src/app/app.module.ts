@@ -20,6 +20,8 @@ import { EditProComponent } from './components/edit-pro/edit-pro.component';
 import { AdminSiderBarComponent } from './components/admin-sider-bar/admin-sider-bar.component';
 import { ListProComponent } from './components/list-pro/list-pro.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProductComponent } from './components/product/product.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     EditProComponent,
     AdminSiderBarComponent,
     ListProComponent,
+    ProductComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

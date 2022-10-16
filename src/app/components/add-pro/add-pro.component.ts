@@ -53,7 +53,7 @@ export class AddProComponent implements OnInit {
     } else {
       this.productService.addProduct(this.product).subscribe(res => {
         console.log(res);
-        alert("Đăng ký thành công");
+        alert("Thêm sản phẩm thành công");
         this.Router.navigateByUrl("admin")
       },
         err => {
