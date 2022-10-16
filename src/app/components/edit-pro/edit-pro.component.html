@@ -30,8 +30,15 @@
         <!-- Form right -->
         <div class="Form-r w-1/2 basis-[48%]">
           <label for="" class="font-bold">Product Image</label> <br>
-            <img id="imgPreview" class="w-full my-4" src="../assets/img/image-preview.png" alt="your image" />
-            <input accept="image/*" type='file' [(ngModel)]="product.img" name="img" class="my-4" /> <br>
+            <!-- <img id="imgPreview" class="w-full my-4" src="../assets/img/image-preview.png" alt="your image" />
+            <input accept="image/*" type='file' [(ngModel)]="product.img" name="img" class="my-4" /> <br> -->
+
+            <ngx-dropzone (change)="onSelect($event)" class="my-4" accept="image/jpeg,image/jpg,image/png,image/gif">
+              <ngx-dropzone-label>Drop it, baby!</ngx-dropzone-label>
+              <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f" [removable]="true" (removed)="onRemove(f)">
+                  <!-- <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label> -->
+              </ngx-dropzone-image-preview>
+            </ngx-dropzone>
           
           <button type="button" (click)="onHandleEdit()" class="w-40 h-10 bg-[#003171] text-white p-2 rounded-lg">Add product</button>
           <a routerLink="/admin" class="w-40 h-10 bg-[red] text-white p-[10px] rounded-lg ml-2">Cancel</a>
