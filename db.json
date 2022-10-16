@@ -117,6 +117,12 @@
       "email": "admin14@gmail.com",
       "password": "123456",
       "id": 7
+    },
+    {
+      "fullname": "Mai Khả Ninh",
+      "email": "ninhadmit147@gmail.com",
+      "password": "âdmit147",
+      "id": 8
     }
   ]
 }
