@@ -15,4 +15,7 @@ export class SizeService {
   getAllSize(): Observable<ISize[]> {
     return this.HttpClient.get<ISize[]>(`${this.API}`);
   }
+  getSize(id: any): Observable<ISize[]> {
+    return this.HttpClient.get<ISize[]>(`${this.API}/${id}`);
+  }
 }
