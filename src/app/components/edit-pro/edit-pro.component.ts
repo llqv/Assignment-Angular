@@ -1,3 +1,5 @@
+import { SizeService } from './../../services/size.service';
+import { ISize } from './../../models/size';
 import { ICate } from './../../models/category';
 import { CategoryService } from './../../services/category.service';
 
@@ -15,22 +17,26 @@ import { IProduct } from 'src/app/models/product';
 export class EditProComponent implements OnInit {
 
   categories!: ICate[] | any
+  sizes!: ISize[] | any
   // product: IProduct = new IProduct();
   product: IProduct = {
     name: "",
     price: 0,
     desc: '',
     categoryId: '',
+    size: '',
     img: '',
   };
   constructor(
     private ActivatedRoute: ActivatedRoute,
     private productService: ProductService,
     private cateService: CategoryService,
+    private sizeService: SizeService,
     private Router: Router
   ) {}
   ngOnInit(): void {
-    this.getCate()
+    this.getCate();
+    this.getSize();
     const id = this.ActivatedRoute.snapshot.paramMap.get('id')!
     console.log(id)
     this.productService.getProduct(+id).subscribe(data => {
@@ -43,6 +49,11 @@ export class EditProComponent implements OnInit {
   getCate(){
     this.cateService.getAllCate().subscribe(data=>{
       this.categories = data
+    })
+  }
+  getSize() {
+    this.sizeService.getAllSize().subscribe(dataSize => {
+      this.sizes = dataSize
     })
   }
 

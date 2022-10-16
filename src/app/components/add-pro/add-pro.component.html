@@ -26,6 +26,16 @@
                     Chưa chọn danh mục cho sản phẩm
                 </div>
 
+                <label for="" class="font-bold">Size</label> <br>
+                <select name="size" [(ngModel)]="product.size" formControlName="size" name="size"
+                    class="w-full my-4 h-8 rounded-md text-[#295288]">
+                    <option *ngFor="let size of sizes" value="{{size.id}}">{{size.name}}</option>
+                </select>
+                <br>
+                <div *ngIf="!this.productForm.value.size" class="text-red-500">
+                    Chưa chọn kích thước cho sản phẩm
+                </div>
+
                 <label for="" class="font-bold">Description</label>
                 <textarea name="" id="" cols="30" rows="10" [(ngModel)]="product.desc" formControlName="desc"
                     name="desc" class="w-full my-4 h-40 p-4 rounded-md text-[#295288]"></textarea>
