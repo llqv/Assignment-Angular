@@ -10,8 +10,15 @@
           <input type="number" [(ngModel)]="product.price" name="price" class="w-full my-4 h-8 p-4 rounded-md text-[#295288] border-2 border-solid ">
           
           <label for="" class="font-bold">Category</label> <br>
-          <select name="categoryId" [(ngModel)]="product.categoryId" name="categoryId" class="w-full my-4 h-8 rounded-md text-[#295288]">
+          <select name="categoryId" [(ngModel)]="product.categoryId" name="categoryId" 
+            class="w-full my-4 h-8 rounded-md text-[#295288]">
             <option *ngFor="let cate of categories" value="{{cate.id}}">{{cate.name}}</option>
+          </select>
+          <br>
+          <label for="" class="font-bold">Size</label> <br>
+          <select name="size" [(ngModel)]="product.size" name="size"
+              class="w-full my-4 h-8 rounded-md text-[#295288]">
+              <option *ngFor="let size of sizes" value="{{size.id}}">{{size.name}}</option>
           </select>
           <br>
   

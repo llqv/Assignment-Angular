@@ -1,10 +1,10 @@
 <app-header></app-header>
-<div id="detail-product" class="px-28">
+<div *ngIf="product" id="detail-product" class="px-28">
     <div class="w-full flex mt-10  ">
         <div class="left w-[50%]">
-            <img id="mainImg" class="mainImg mb-2 w-full" src="../assets/img/f1.jpg" alt="">
+            <img id="mainImg" class="mainImg mb-2 w-full" src="{{product.img}}" alt="">
             <div class="small-img-group w-full flex justify-between ">
-                <div class="small-img-col basis-[24%] cursor-pointer">
+                <!-- <div class="small-img-col basis-[24%] cursor-pointer">
                     <img class="small-img" src="../assets/img/f1.jpg" alt="">
                 </div>
                 <div class="small-img-col basis-[24%] cursor-pointer">
@@ -15,30 +15,19 @@
                 </div>
                 <div class="small-img-col basis-[24%] cursor-pointer">
                     <img class="small-img" src="../assets/img/f4.jpg" alt="">
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="right w-[50%] ml-20">
             <span class="text-sm font-bold">Home</span> / <span class="text-sm font-bold">T-Shirt</span>
-            <h4 class="text-2xl font-bold my-6">Men's Fashion T Shirt</h4>
-            <h2 class="text-3xl font-bold">$139.00</h2>
+            <h4 class="text-2xl font-bold my-6">{{product.name}}</h4>
+            <h2 class="text-3xl font-bold">${{product.price}}</h2>
             <br>
             <input type="number" value="1" class="w-10 h-10 border border-separate mr-5 p-1 rounded-md">
             <button class="w-[200px] h-10 bg-green-600 text-white rounded-md">Add to cart</button>
             <h4 class="text-2xl font-bold my-6">Product details</h4>
             <span>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores voluptates ad unde modi. Enim
-                commodi vel voluptatibus quo officia magnam eaque earum explicabo ipsa exercitationem ipsum architecto,
-                quidem veniam.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores voluptates ad unde modi. Enim
-                commodi vel voluptatibus quo officia magnam eaque earum explicabo ipsa exercitationem ipsum architecto,
-                quidem veniam.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores voluptates ad unde modi. Enim
-                commodi vel voluptatibus quo officia magnam eaque earum explicabo ipsa exercitationem ipsum architecto,
-                quidem veniam.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita dolores voluptates ad unde modi. Enim
-                commodi vel voluptatibus quo officia magnam eaque earum explicabo ipsa exercitationem ipsum architecto,
-                quidem veniam.
+                {{product.desc}}
 
             </span>
         </div>

@@ -11,12 +11,13 @@ import { CartpageComponent } from './pages/cartpage/cartpage.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { AdminDashboardComponent } from './pages/admin-dashboard/admin-dashboard.component';
 import { ProductComponent } from './components/product/product.component';
+import { ProductsComponent } from './pages/products/products.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent, pathMatch: "full" },
-  { path: 'product', component: ProductComponent },
+  { path: 'product', component: ProductsComponent },
   { path: 'cart', component: CartpageComponent },
-  { path: 'detailpro', component: DetailProductComponent },
+  { path: 'product/:id', component: DetailProductComponent },
   { path: 'signin', component: SigninComponent },
   { path: 'signup', component: SignupComponent },
   {
