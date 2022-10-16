@@ -22,6 +22,7 @@ import { ListProComponent } from './components/list-pro/list-pro.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductComponent } from './components/product/product.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ProductsComponent } from './pages/products/products.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { ContactComponent } from './components/contact/contact.component';
     ListProComponent,
     ProductComponent,
     ContactComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,
