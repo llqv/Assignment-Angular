@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: '', component: HomepageComponent, pathMatch: "full" },
   { path: 'product', component: ProductsComponent },
   { path: 'cart', component: CartpageComponent },
-  { path: 'detailpro', component: DetailProductComponent },
+  { path: 'product/:id', component: DetailProductComponent },
   { path: 'signin', component: SigninComponent },
   { path: 'signup', component: SignupComponent },
   {
