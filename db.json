@@ -79,43 +79,6 @@
       "size": "5",
       "img": "https://res.cloudinary.com/dqsykuvvc/image/upload/v1665938486/asm_angular/f4_g7zxkj.jpg",
       "id": 4
-    },
-    {
-      "name": "Pro 5",
-      "price": 20000,
-      "desc": "Áo đẹp không, áo này đẹp thế",
-      "categoryId": "2",
-      "size": "6",
-      "img": "https://res.cloudinary.com/dqsykuvvc/image/upload/v1665938485/asm_angular/f5_yufjgr.jpg",
-      "id": 5
-    },
-    {
-<<<<<<< HEAD
-      "name": "12",
-      "price": 12213321321,
-      "desc": "2121",
-      "categoryId": "2",
-      "size": "4",
-      "img": "",
-      "id": 6
-    },
-    {
-      "name": "admin",
-      "price": 12,
-      "desc": "errewrwer",
-      "categoryId": "2",
-      "size": "6",
-      "img": "",
-      "id": 7
-=======
-      "name": "Gà không lối thoát",
-      "price": 20000,
-      "desc": "Ddaaay la chức năng ko phải bug",
-      "categoryId": "2",
-      "size": "3",
-      "img": "",
-      "id": 6
->>>>>>> f82b3128550e067b4962e80bd15ab15a775f4291
     }
   ],
   "SignupUsers": [

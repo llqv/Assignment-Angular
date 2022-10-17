@@ -3,6 +3,7 @@ import { IProduct } from 'src/app/models/product';
 import { CategoryService } from 'src/app/services/category.service';
 import { ProductService } from 'src/app/services/product.service';
 
+
 @Component({
   selector: 'app-list-pro',
   templateUrl: './list-pro.component.html',
@@ -28,6 +29,11 @@ export class ListProComponent implements OnInit {
           this.cate = datacate
         })
       }
+    })
+  }
+  removeProduct(id: any) {
+    this.productService.removeProduct(id).subscribe(() => {
+      this.products = this.products.filter(item => item.id !== id)
     })
   }
 
