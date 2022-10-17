@@ -53,7 +53,8 @@
                                 <button (click)="removeProduct(item.id)"
                                     class="rounded-md bg-red-500 text-white px-2 py-1">Xóa</button>
                                 |
-                                <a class="rounded-md bg-green-500 text-white px-2 py-1" href="">Sửa</a>
+                                <a routerLink="/admin/product/{{item.id}}/edit"
+                                    class="rounded-md bg-green-500 text-white px-2 py-1" href="">Sửa</a>
                             </td>
                         </tr>
 
