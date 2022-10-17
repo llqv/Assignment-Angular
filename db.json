@@ -1,0 +1,134 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "name": "Áo T-shikt"
+    },
+    {
+      "id": 2,
+      "name": "Áo Hoode"
+    },
+    {
+      "id": 3,
+      "name": "Áo khoác"
+    },
+    {
+      "id": 4,
+      "name": "Áo du lịch"
+    }
+  ],
+  "size": [
+    {
+      "id": 1,
+      "name": "Small"
+    },
+    {
+      "id": 2,
+      "name": "Medium"
+    },
+    {
+      "id": 3,
+      "name": "Large"
+    },
+    {
+      "id": 4,
+      "name": "XL"
+    },
+    {
+      "id": 5,
+      "name": "2XL"
+    },
+    {
+      "id": 6,
+      "name": "3XL"
+    }
+  ],
+  "products": [
+    {
+      "name": "Pro 1 update",
+      "price": 60000,
+      "desc": "Áo đẹp không, áo này đẹp thế 3k",
+      "categoryId": "1",
+      "size": "6",
+      "img": "https://res.cloudinary.com/dqsykuvvc/image/upload/v1665938485/asm_angular/f1_yyv3ro.jpg",
+      "id": 1
+    },
+    {
+      "name": "Pro 2",
+      "price": 20000,
+      "desc": "Áo đẹp không, áo này đẹp thế",
+      "categoryId": "2",
+      "size": "3",
+      "img": "https://res.cloudinary.com/dqsykuvvc/image/upload/v1665938485/asm_angular/f2_mmkqlr.jpg",
+      "id": 2
+    },
+    {
+      "name": "Pro 3",
+      "price": 20000,
+      "desc": "Áo đẹp không, áo này đẹp thế",
+      "categoryId": "3",
+      "size": "1",
+      "img": "https://res.cloudinary.com/dqsykuvvc/image/upload/v1665938485/asm_angular/f3_opcfql.jpg",
+      "id": 3
+    },
+    {
+      "name": "Pro 4",
+      "price": 20000,
+      "desc": "Áo đẹp không, áo này đẹp thế",
+      "categoryId": "4",
+      "size": "5",
+      "img": "https://res.cloudinary.com/dqsykuvvc/image/upload/v1665938486/asm_angular/f4_g7zxkj.jpg",
+      "id": 4
+    }
+  ],
+  "SignupUsers": [
+    {
+      "fullname": "admin",
+      "email": "admin@gmail.com",
+      "password": "",
+      "id": 1
+    },
+    {
+      "fullname": "admin1",
+      "email": "admin@gmail.com",
+      "password": "",
+      "id": 2
+    },
+    {
+      "fullname": "admin",
+      "email": "admin@gmail.com",
+      "password": "",
+      "id": 3
+    },
+    {
+      "fullname": "admin",
+      "email": "admin@gmail.com",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "fullname": "admin12",
+      "email": "admin@gmail.com",
+      "password": "123456",
+      "id": 5
+    },
+    {
+      "fullname": "admin13",
+      "email": "admin13@gmail.com",
+      "password": "123456",
+      "id": 6
+    },
+    {
+      "fullname": "admin14",
+      "email": "admin14@gmail.com",
+      "password": "123456",
+      "id": 7
+    },
+    {
+      "fullname": "Mai Khả Ninh",
+      "email": "ninhadmit147@gmail.com",
+      "password": "âdmit147",
+      "id": 8
+    }
+  ]
+}

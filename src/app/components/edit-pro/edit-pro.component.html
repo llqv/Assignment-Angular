@@ -1,0 +1,48 @@
+<div class="main w-full p-8">
+    <h1 class="text-2xl font-bold">Edit Product</h1>
+    <div class="Form w-full mt-10">
+      <form #formAdd="ngForm" class="w-full flex justify-between"  action="">
+        <div class="Form-l w-1/2 basis-[48%]">
+          <label for="" class="font-bold">Product Name</label>
+          <input type="text" [(ngModel)]="product.name" name="name" class="w-full my-4 h-8 p-4 rounded-md text-[#295288] border-2 border-solid ">
+          
+          <label for="" class="font-bold">Product Price</label>
+          <input type="number" [(ngModel)]="product.price" name="price" class="w-full my-4 h-8 p-4 rounded-md text-[#295288] border-2 border-solid ">
+          
+          <label for="" class="font-bold">Category</label> <br>
+          <select name="categoryId" [(ngModel)]="product.categoryId" name="categoryId" 
+            class="w-full my-4 h-8 rounded-md text-[#295288]">
+            <option *ngFor="let cate of categories" value="{{cate.id}}">{{cate.name}}</option>
+          </select>
+          <br>
+          <label for="" class="font-bold">Size</label> <br>
+          <select name="size" [(ngModel)]="product.size" name="size"
+              class="w-full my-4 h-8 rounded-md text-[#295288]">
+              <option *ngFor="let size of sizes" value="{{size.id}}">{{size.name}}</option>
+          </select>
+          <br>
+  
+          <label for="" class="font-bold">Description</label>
+          <textarea name="" id="" cols="30" rows="10" [(ngModel)]="product.desc" name="desc" class="w-full my-4 h-40 p-4 rounded-md text-[#295288]"></textarea>
+          
+        </div>
+  
+        <!-- Form right -->
+        <div class="Form-r w-1/2 basis-[48%]">
+          <label for="" class="font-bold">Product Image</label> <br>
+            <!-- <img id="imgPreview" class="w-full my-4" src="../assets/img/image-preview.png" alt="your image" />
+            <input accept="image/*" type='file' [(ngModel)]="product.img" name="img" class="my-4" /> <br> -->
+
+            <ngx-dropzone (change)="onSelect($event)" class="my-4" accept="image/jpeg,image/jpg,image/png,image/gif">
+              <ngx-dropzone-label>Drop it, baby!</ngx-dropzone-label>
+              <ngx-dropzone-image-preview ngProjectAs="ngx-dropzone-preview" *ngFor="let f of files" [file]="f" [removable]="true" (removed)="onRemove(f)">
+                  <!-- <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label> -->
+              </ngx-dropzone-image-preview>
+            </ngx-dropzone>
+          
+          <button type="button" (click)="onHandleEdit()" class="w-40 h-10 bg-[#003171] text-white p-2 rounded-lg">Add product</button>
+          <a routerLink="/admin" class="w-40 h-10 bg-[red] text-white p-[10px] rounded-lg ml-2">Cancel</a>
+        </div>
+      </form>
+    </div>
+  </div>
