@@ -90,6 +90,7 @@
       "id": 5
     },
     {
+<<<<<<< HEAD
       "name": "12",
       "price": 12213321321,
       "desc": "2121",
@@ -106,6 +107,15 @@
       "size": "6",
       "img": "",
       "id": 7
+=======
+      "name": "Gà không lối thoát",
+      "price": 20000,
+      "desc": "Ddaaay la chức năng ko phải bug",
+      "categoryId": "2",
+      "size": "3",
+      "img": "",
+      "id": 6
+>>>>>>> f82b3128550e067b4962e80bd15ab15a775f4291
     }
   ],
   "SignupUsers": [
