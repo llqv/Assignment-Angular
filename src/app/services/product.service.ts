@@ -8,7 +8,7 @@ import { IProduct } from '../models/product';
   providedIn: 'root'
 })
 export class ProductService {
-  API = `http://localhost:3000/products`;
+  API = `https://serverangular.vercel.app/api/products`;
   constructor(private httpClient: HttpClient) { }
 
   getProducts(): Observable<IProduct[]> {

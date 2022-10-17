@@ -9,7 +9,7 @@ import { Injectable } from '@angular/core';
 })
 export class SizeService {
 
-  API = `http://localhost:3000/size`;
+  API = `https://serverangular.vercel.app/api/size`;
   constructor(private HttpClient: HttpClient) { }
 
   getAllSize(): Observable<ISize[]> {

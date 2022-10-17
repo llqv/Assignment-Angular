@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
 })
 export class CategoryService {
 
-  API = `http://localhost:3000/category`;
+  API = `https://serverangular.vercel.app/api/category`;
   constructor(private HttpClient: HttpClient) { }
 
   getAllCate(): Observable<ICate[]> {
