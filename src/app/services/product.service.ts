@@ -8,7 +8,7 @@ import { IProduct } from '../models/product';
   providedIn: 'root'
 })
 export class ProductService {
-  API = `https://vercel.com/llqv/dbjson/api/products`;
+  API = `https://fakeapi-three.vercel.app/api/products`;
   constructor(private httpClient: HttpClient) { }
 
   getProducts(): Observable<IProduct[]> {
