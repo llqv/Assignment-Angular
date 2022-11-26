@@ -47,17 +47,17 @@ export class AddProComponent implements OnInit {
     
   }
 
-  files: File[] = [];
+  // files: File[] = [];
 
-  onSelect(event: any) {
-    console.log(event);
-    this.files.push(...event.addedFiles);
-  }
+  // onSelect(event: any) {
+  //   console.log(event);
+  //   this.files.push(...event.addedFiles);
+  // }
 
-  onRemove(event: any) {
-    console.log(event);
-    this.files.splice(this.files.indexOf(event), 1);
-  }
+  // onRemove(event: any) {
+  //   console.log(event);
+  //   this.files.splice(this.files.indexOf(event), 1);
+  // }
 
   getCate() {
     this.cateService.getAllCate().subscribe(dataCate => {

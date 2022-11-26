@@ -34,6 +34,7 @@ export class ListProComponent implements OnInit {
   removeProduct(id: any) {
     this.productService.removeProduct(id).subscribe(() => {
       this.products = this.products.filter(item => item.id !== id)
+      alert("Xoa thanh cong");
     })
   }
 
